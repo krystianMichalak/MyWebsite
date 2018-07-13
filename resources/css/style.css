@@ -1,0 +1,301 @@
+
+/* MAIN COLOR ->  #3498db  */
+/*---------------------------------------------------------*/
+/* GENERAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+/*---------------------------------------------------------*/
+/* REUSABLE ELEMENTS */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Links */
+
+a.nav:link,
+a.nav:visited {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    transition: border 0.5s
+}
+
+a.nav:hover,
+a.nav:active {
+    color: #fff;
+    border-bottom: 3px solid #3498db;   
+}
+
+/* Headers */
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 180%;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 30px;   
+}
+
+/* Buttons */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 5px 35px;
+    margin: 20px 20px 20px 0;
+    border-radius: 200px;
+    font-size: 80%;
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit] { color: #fff; }
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] { background-color: #3498db; }
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active { background-color: #2980b9; }
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: #3498db;
+    border: 2px solid #3498db;
+    
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+    background-color: #3498db;
+    border: 2px solid transparent;
+}
+/*---------------------------------------------------------*/
+/* NAVIGATION */
+
+.main-nav {
+    float: left;
+    list-style: none;
+    padding: 10px 0 10px 0;
+    margin-top: 50px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.main-nav li.min {
+    display: block;
+}
+
+.mobile-nav-icon {
+    display: none;
+    padding: 10px;
+}
+
+.mobile-nav-icon i {
+    font-size: 40px;
+}
+
+.ion-android-close {
+    position: absolute;
+    top: 25px;
+    left: 140px;
+}
+
+/*---------------------------------------------------------*/
+/* HEADER */
+
+header {
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0 ,0 , 0.4), rgba(0, 0 ,0 , 0.4)), url(img/igor-ovsyannykov-277756.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header-content {
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding-left: 200px;
+}
+
+.header-author {
+    text-transform: none;
+    font-size: 150%;
+    margin: 10px 0 40px 0;
+}
+
+.header-description { line-height: 1.2; }
+
+.btn-contact:link,
+.btn-contact:visited { padding: 5px 40px; }
+
+.btn-contact:hover,
+.btn-contact:active { padding: 5px 40px; }
+
+/*---------------------------------------------------------*/
+/* SECTION PROJECT */
+.section-project {
+    background-color: #fff;
+    padding: 80px 0;
+    position: relative;
+}
+
+.section-project:nth-of-type(even){
+    background-color: #f4f4f4;
+}
+
+.section-description {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.link-preview:link,
+.link-preview:visited {
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+}
+
+.link-preview:hover,
+.link-preview:active {
+    color: #fff;
+    border: 0;
+    width: 100%;
+}
+
+.link-preview img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s; 
+}
+
+.link-preview img:hover { transform: scale(0.97); }
+
+.tab-warning {
+    display: none;
+    background-color: #3498db;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 200px;
+    font-size: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+/*---------------------------------------------------------*/
+/* SECTION ABOUT ME */
+
+.about-me {
+    background-color: #f4f4f4;
+    padding: 50px 0 80px 0;
+    position: relative;
+}
+
+.about-description {
+    padding: 115px 0 0 90px;
+    display: inline-block;
+    float: left;
+    width: 65%;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    line-height: 1.2;
+}
+
+.photo-me {
+    padding: 50px 0 0 50px;
+    display: inline-block;
+    float: left;
+}
+
+
+/*---------------------------------------------------------*/
+/* CONTACT FORM */
+
+.section-contact { padding: 50px 0; }
+
+.contact-form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0 40px 0;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea { height: 100px; }
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(52, 152, 219, 0), rgba(52, 152, 219, 0.75), rgba(52, 152, 219, 0));
+    height: 2px;
+}
+
+.form-messages {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.success { background-color: rgba(38, 191, 68, 0.8); }
+
+.error { background-color: rgba(209, 46, 46, 0.8); }
+
+/*---------------------------------------------------------*/
